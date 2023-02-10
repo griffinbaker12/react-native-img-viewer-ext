@@ -1,7 +1,7 @@
 {
     "name": "react-native-img-viewer-ext",
-    "version": "1.0.0",
-    "main": "./src/image-viewer/index.ts",
+    "version": "1.0.2",
+    "main": "./src/index.ts",
     "scripts": {
         "start": "expo start",
         "android": "expo start --android",
