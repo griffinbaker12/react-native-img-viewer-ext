@@ -461,7 +461,7 @@ export default class ImageViewer extends React.Component<ImageZoomProps, ImageZo
     public panResponderReleaseResolve = (): void => {
         // 判断是否是 swipeDown
         if (this.props.enableSwipeDown && this.props.swipeDownThreshold) {
-            if (this.swipeDownOffset > this.props.swipeDownThreshold) {
+            if (this.positionY > this.props.swipeDownThreshold) {
                 if (this.props.onSwipeDown) {
                     this.props.onSwipeDown();
                 }
@@ -472,12 +472,9 @@ export default class ImageViewer extends React.Component<ImageZoomProps, ImageZo
 
         // 判断是否是 swipeUp
         if (this.props.enableSwipeUp && this.props.swipeUpThreshold) {
-            console.log('the offset is', this.swipeUpOffset, 'the threshold is', this.props.swipeUpThreshold);
-            if (this.swipeUpOffset > this.props.swipeUpThreshold) {
-                console.log('ok, should close', this.props.onSwipeUp);
+            if (Math.abs(this.positionY) > this.props.swipeUpThreshold) {
                 if (this.props.onSwipeUp) {
                     this.props.onSwipeUp();
-                    console.log('ok so this ran...');
                 }
                 // Stop reset.
                 return;
