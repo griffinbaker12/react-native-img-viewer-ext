@@ -6,9 +6,12 @@ npm-debug.*
 *.p8
 *.p12
 *.key
+*.log
 *.mobileprovision
 *.orig.*
 web-build/
+tmp
+build
 
 # macOS
 .DS_Store
