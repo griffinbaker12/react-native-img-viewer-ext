@@ -1,6 +1,6 @@
 {
     "name": "react-native-img-viewer-ext",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "./src/index.ts",
     "module": "./src/index.ts",
     "scripts": {
