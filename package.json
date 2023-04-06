@@ -1,7 +1,8 @@
 {
     "name": "react-native-img-viewer-ext",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "main": "./src/index.ts",
+    "module": "./src/index.ts",
     "scripts": {
         "start": "expo start",
         "android": "expo start --android",
@@ -9,15 +10,13 @@
         "web": "expo start --web"
     },
     "dependencies": {
+        "react": "^18.2.0",
+        "react-native": "^0.71.5",
+        "typescript": "^4.6.3",
+        "@types/react-native": "^0.71.5",
         "@types/react": "^18.0.27",
-        "@types/react-native": "^0.71.2",
-        "expo": "~47.0.12",
-        "expo-status-bar": "~1.4.2",
-        "react": "18.1.0",
-        "react-native": "0.70.5",
-        "typescript": "^4.6.3"
-    },
-    "devDependencies": {
-        "@babel/core": "^7.12.9"
+        "expo": "~48.0.10",
+        "@babel/core": "^7.12.9",
+        "expo-status-bar": "~1.4.2"
     }
 }
